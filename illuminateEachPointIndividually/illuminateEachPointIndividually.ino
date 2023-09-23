@@ -52,7 +52,7 @@ void loop()
       { 
         row = 0; 
         shiftVal += 1;
-        if(shiftVal >= 7)
+        if(shiftVal > 7)
         {
           shiftVal = 0;
         }
