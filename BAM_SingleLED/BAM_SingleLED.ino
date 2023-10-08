@@ -53,9 +53,9 @@ void clearLeds(){
 }
 
 void turnOnLed(){
-  for(j = 0; j < 8; j++){
-        currentWriteCathode = 0b000010000 & (0b0000001<<j);
-			  writeCells(currentWriteCathode, 0b000010000);
+ for(j = 0; j < 8; j++){
+        currentWriteCathode = 0b00001000 & (0b00000001<<j);
+			  writeCells(~currentWriteCathode, 0b00001000);
 		}
 }
 
